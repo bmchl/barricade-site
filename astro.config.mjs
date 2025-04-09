@@ -7,5 +7,9 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()]
     },
-    adapter: netlify()
+    output: 'static',
+    adapter: netlify({
+        mode: 'static',
+        redirects: false
+    })
 });
