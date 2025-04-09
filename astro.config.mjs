@@ -9,7 +9,9 @@ export default defineConfig({
     },
     output: 'static',
     adapter: netlify({
-        mode: 'static',
-        redirects: false
+        // Disable the feature that's causing errors
+        functionPerRoute: false,
+        binaryMediaTypes: [],
+        imageService: false
     })
 });
