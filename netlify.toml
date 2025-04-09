@@ -15,10 +15,4 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-
-# Create an explicit empty redirects array to avoid the adapter error
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200 
+    X-XSS-Protection = "1; mode=block" 

@@ -7,11 +7,5 @@ export default defineConfig({
     vite: {
         plugins: [tailwindcss()]
     },
-    output: 'static',
-    adapter: netlify({
-        // Disable the feature that's causing errors
-        functionPerRoute: false,
-        binaryMediaTypes: [],
-        imageService: false
-    })
+    adapter: netlify()
 });
