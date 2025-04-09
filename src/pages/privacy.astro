@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Privacy Policy">
+    <div class="max-w-3xl mx-auto">
+        <h1 class="mb-8">Privacy Policy for Barricade</h1>
+        <p class="text-gray-400 mb-8">Last Updated: April 9, 2025</p>
+        
+        <div class="prose prose-invert">
+            <p>This Privacy Policy describes how Barricade ("we", "our", or "app") collects, uses, and handles your information when you use our iOS application.</p>
+
+            <h2 class="mt-8 mb-4">Information We Collect</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">Information You Provide</h3>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li><strong>Concert Information</strong>: Details about concerts you've attended, including artists, venues, dates, and setlists</li>
+                <li><strong>Media Content</strong>: Videos and audio you capture or upload to document your concert experiences</li>
+                <li><strong>Song Data</strong>: Information about songs identified using audio recognition technology</li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Automatically Collected Information</h3>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li><strong>Device Information</strong>: Basic information about your device, such as model and iOS version, necessary for app functionality and crash reporting</li>
+                <li><strong>App Usage Data</strong>: Anonymous usage statistics to help us improve the app experience</li>
+            </ul>
+            
+            <h2 class="mt-8 mb-4">How We Use Your Information</h2>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li><strong>Provide Core Functionality</strong>: Store and organize your concert memories, setlists, and media</li>
+                <li><strong>Audio Recognition</strong>: Process audio from your videos to identify songs using Apple's ShazamKit technology</li>
+                <li><strong>Improve the App</strong>: Analyze usage patterns to enhance features and fix issues</li>
+            </ul>
+            
+            <h2 class="mt-8 mb-4">Data Storage and Security</h2>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li><strong>Local Storage</strong>: All your concert data and media are stored locally on your device using SwiftData and iOS secure storage</li>
+                <li><strong>No External Servers</strong>: Barricade does not maintain its own servers for data storage - your information remains on your device</li>
+                <li><strong>Device Backup</strong>: Your data may be included in your device backups (iCloud or local) according to your iOS settings</li>
+            </ul>
+            
+            <h2 class="mt-8 mb-4">Third-Party Services</h2>
+            
+            <h3 class="text-xl font-semibold mb-2">ShazamKit</h3>
+            <p>We use Apple's ShazamKit for song identification. When you use this feature:</p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li>Short audio samples from your videos are processed for song matching</li>
+                <li>Audio processing occurs on your device and through Apple's ShazamKit service</li>
+                <li>Usage is subject to <a href="https://www.apple.com/legal/privacy/en-ww/" class="text-[#B0FFF6]">Apple's Privacy Policy</a></li>
+            </ul>
+            
+            <h3 class="text-xl font-semibold mb-2">Media Library Access</h3>
+            <p>The app requests access to your Photos library to:</p>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li>Allow you to select videos to add to your concert memories</li>
+                <li>Save videos captured within the app</li>
+                <li>Access is controlled through iOS permissions and can be revoked at any time</li>
+            </ul>
+            
+            <h2 class="mt-8 mb-4">Data Sharing</h2>
+            <p>We do not sell, rent, or share your personal information with third parties.</p>
+            
+            <h2 class="mt-8 mb-4">Your Rights and Controls</h2>
+            <ul class="list-disc list-inside mb-4 space-y-2">
+                <li><strong>Access and Control</strong>: You maintain full control over all data stored in the app</li>
+                <li><strong>Deletion</strong>: You can delete any or all of your data from within the app at any time</li>
+                <li><strong>Permissions</strong>: You can manage app permissions (camera, photos access) through your device settings</li>
+            </ul>
+            
+            <h2 class="mt-8 mb-4">Children's Privacy</h2>
+            <p>Barricade is not directed at children under the age of 13, and we do not knowingly collect personal information from children.</p>
+            
+            <h2 class="mt-8 mb-4">Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy in the app and updating the "Last Updated" date.</p>
+            
+            <h2 class="mt-8 mb-4">Contact Us</h2>
+            <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><a href="mailto:michael@banna.dev" class="text-[#B0FFF6]">michael@banna.dev</a></p>
+            
+            <hr class="my-8 border-gray-700" />
+            
+            <p>By using Barricade, you consent to our Privacy Policy and agree to its terms.</p>
+        </div>
+    </div>
+</Layout> 

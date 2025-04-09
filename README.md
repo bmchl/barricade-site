@@ -1,51 +1,46 @@
-# Astro on Netlify Platform Starter
+# Barricade - iOS App Landing Page
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+This repository contains a simple landing page for Barricade, an iOS app designed for concert enthusiasts. The site is built with Astro and deployed on Netlify.
 
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## Features
 
-## Astro Commands
+- **Landing Page**: Showcases the app with screenshots and key features
+- **Privacy Policy**: Detailed information about data handling and privacy practices
+- **Support Page**: Contact form for user feedback and support inquiries
 
-All commands are run from the root of the project, from a terminal:
+## Development
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Clone the repository:
 
-## Deploying to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/astro-platform-starter)
-
-## Developing Locally
-
-| Prerequisites                                                                |
-| :--------------------------------------------------------------------------- |
-| [Node.js](https://nodejs.org/) v18.14+.                                      |
-| (optional) [nvm](https://github.com/nvm-sh/nvm) for Node version management. |
-
-1. Clone this repository, then run `npm install` in its root directory.
-
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
-
-```
-npm install netlify-cli@latest -g
+```bash
+git clone https://github.com/yourusername/barricade-site.git
+cd barricade-site
 ```
 
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
+2. Install dependencies:
 
-```
-netlify link
-```
-
-4. Then, run the Astro.js development server via Netlify CLI:
-
-```
-netlify dev
+```bash
+npm install
 ```
 
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+## Deployment
+
+This site is configured for deployment on Netlify. Connect your GitHub repository to Netlify for automatic deployments.
+
+## Technologies Used
+
+- **[Astro](https://astro.build/)**: Fast static site generation
+- **[Tailwind CSS](https://tailwindcss.com/)**: Utility-first CSS framework
+- **[Netlify](https://www.netlify.com/)**: Hosting platform with form handling

@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Support">
+    <div class="max-w-2xl mx-auto">
+        <h1 class="mb-8">Support & Feedback</h1>
+        
+        <p class="mb-6">We're constantly working to improve Barricade and would love to hear from you. Whether you've encountered an issue or have a suggestion for a new feature, please let us know.</p>
+        
+        <div style="background-color: #23222C;" class="p-6 rounded-lg mb-8">
+            <h2 class="text-[#B0FFF6] mb-6">Contact Form</h2>
+            
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                <input type="hidden" name="form-name" value="contact" />
+                
+                <div>
+                    <label for="name" class="block mb-2">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required 
+                        class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#B0FFF6]"
+                    >
+                </div>
+                
+                <div>
+                    <label for="email" class="block mb-2">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#B0FFF6]"
+                    >
+                </div>
+                
+                <div>
+                    <label for="subject" class="block mb-2">Subject</label>
+                    <select 
+                        id="subject" 
+                        name="subject" 
+                        required 
+                        class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#B0FFF6]"
+                    >
+                        <option value="bug">Bug Report</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="question">Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message" class="block mb-2">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        required 
+                        class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-[#B0FFF6]"
+                    ></textarea>
+                </div>
+                
+                <div>
+                    <button 
+                        type="submit" 
+                        class="btn"
+                    >
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <div style="background-color: #23222C;" class="p-6 rounded-lg">
+            <h2 class="text-[#B0FFF6] mb-4">Direct Contact</h2>
+            <p>For urgent inquiries, you can also reach us directly at:</p>
+            <p class="mt-4">
+                <a href="mailto:michael@banna.dev" class="text-[#B0FFF6]">michael@banna.dev</a>
+            </p>
+        </div>
+    </div>
+</Layout> 

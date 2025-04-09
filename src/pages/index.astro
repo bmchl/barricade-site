@@ -1,21 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="Concert Memory App">
+    <div class="flex flex-col items-center text-center">
+        <img src="/barricade-header.png" alt="Barricade App" class="w-full max-w-2xl mb-8 rounded-lg shadow-lg" />
+        
+        <p class="text-xl max-w-2xl mb-8">
+            An iOS app designed for concert enthusiasts who want to document and remember their live music experiences.
+            Track concerts, record setlists, and automatically identify songs using Shazam integration.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-12">
+            <div class="flex flex-col items-center">
+                <img src="/concerts-list.PNG" alt="Concerts List" class="rounded-lg shadow-lg max-w-full h-auto mb-4" />
+                <p class="text-lg font-medium">Track your concerts</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="/song-detected.PNG" alt="Song Detection" class="rounded-lg shadow-lg max-w-full h-auto mb-4" />
+                <p class="text-lg font-medium">Identify songs with Shazam</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="/song-page.PNG" alt="Song Page" class="rounded-lg shadow-lg max-w-full h-auto mb-4" />
+                <p class="text-lg font-medium">Build custom setlists</p>
+            </div>
+        </div>
+        
+        <a href="https://testflight.apple.com/join/tRMvRpA4" class="btn btn-lg mb-8">Download on TestFlight</a>
+        
+        <div style="background-color: #23222C;" class="p-6 rounded-lg max-w-2xl text-left mt-8">
+            <h2 class="mb-4 text-[#B0FFF6]">Key Features</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>Concert Management: Track past and upcoming concerts</li>
+                <li>Automatic Song Detection: Identify songs with Shazam integration</li>
+                <li>Custom Setlists: Build and reorder setlists for each concert</li>
+                <li>Video Management: Save video clips for each song</li>
+                <li>Rich Detail Views: Colorful, engaging interfaces</li>
+            </ul>
+        </div>
+    </div>
 </Layout>

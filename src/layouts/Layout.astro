@@ -1,9 +1,5 @@
 ---
-import '../../src/styles/globals.css';
-import '@fontsource-variable/inter/wght.css';
-import interWoff2 from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import '../styles/globals.css';
 
 interface Props {
     title: string;
@@ -16,18 +12,31 @@ const { title } = Astro.props;
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>{title}</title>
+        <title>{title} - Barricade</title>
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="preload" as="font" type="font/woff2" href={interWoff2} crossorigin />
+        <meta name="description" content="Barricade - Concert Memory App for iOS" />
     </head>
-    <body class="antialiased text-white bg-complementary">
-        <div class="flex flex-col min-h-screen px-6 bg-noise sm:px-12">
+    <body class="antialiased text-white" style="background-color: #323140;">
+        <div class="flex flex-col min-h-screen px-6 sm:px-12">
             <div class="flex flex-col w-full max-w-5xl mx-auto grow">
-                <Header />
-                <main class="grow"><slot /></main>
-                <Footer />
+                <header class="py-6">
+                    <nav class="flex items-center justify-between">
+                        <a href="/" class="no-underline">
+                            <img src="/barricade-wordmark.png" alt="Barricade" class="h-10" />
+                        </a>
+                        <div class="flex gap-6">
+                            <a href="/" class="no-underline hover:text-[#B0FFF6]">Home</a>
+                            <a href="/support" class="no-underline hover:text-[#B0FFF6]">Support</a>
+                            <a href="/privacy" class="no-underline hover:text-[#B0FFF6]">Privacy</a>
+                        </div>
+                    </nav>
+                </header>
+                <main class="grow py-8"><slot /></main>
+                <footer class="py-6 text-center text-sm text-gray-400">
+                    &copy; {new Date().getFullYear()} Barricade. All rights reserved.
+                </footer>
             </div>
         </div>
     </body>
